@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stacks": {
+      "type": "string"
+    },
+    "textAboveEmail": {
+      "type": "text"
+    },
+    "email": {
+      "type": "string"
+    },
+    "socialNetworks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-network.social-network"
+    },
+    "shortPresentation": {
+      "type": "richtext"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
