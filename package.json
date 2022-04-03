@@ -5,7 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "npx lerna run dev"
+    "dev": "npx lerna run dev",
+    "build": "cd packages/strapi && yarn run build",
+    "start": " cd packages/strapi && yarn run start"
   },
   "workspaces": {
     "packages": [
