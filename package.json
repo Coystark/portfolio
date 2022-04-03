@@ -5,7 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "npx lerna run dev"
+    "dev": "npx lerna run dev",
+    "postinstall": "npm install --prefix strapi && npm run build --prefix strapi"
   },
   "workspaces": {
     "packages": [
