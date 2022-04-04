@@ -76,7 +76,7 @@ const Home: NextPage = ({ global, projects }: any) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const global = await strapi.get("global", {
     params: { populate: "socialNetworks" },
   });
