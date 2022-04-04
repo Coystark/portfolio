@@ -41,12 +41,14 @@ const Home: NextPage = ({ global, projects }: any) => {
             <a href="#">
               <img
                 src={project.attributes.thumbnail}
-                alt={project.title}
+                alt={project.attributes.title}
                 className="h-auto w-full rounded"
               />
-              <div className="pt-6 text-sm text-white/50 uppercase">
-                {project.attributes.category.data.attributes.name}
-              </div>
+              {project.attributes.category.data && (
+                <div className="pt-6 text-sm text-white/50 uppercase">
+                  {project.attributes.category.data.attributes.name}
+                </div>
+              )}
               <div className="pt-2 text-xl text-white">
                 {project.attributes.title}
               </div>
